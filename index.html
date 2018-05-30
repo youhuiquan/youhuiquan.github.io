@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>Quan UI 1.0 - by JIe</title>
+    <title>Quan UI 1.0 By Jie</title>
     <!-- 引入 WeUI -->
     <link rel="stylesheet" href="Static/Lib/weui/dist/style/weui.min.css" />
     <script type="text/javascript" src="Static/Lib/weui/dist/weui.min.js"></script>
+    <style>
+        .page, body {
+            background-color: #f8f8f8;
+        }
+    </style>
 
 </head>
 <body>
@@ -106,7 +111,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weui-tab__content">表单页</div>
+                    <div class="weui-tab__content">
+                        <div class="weui-loadmore">
+                            <i class="weui-loading"></i>
+                            <span class="weui-loadmore__tips">正在加载</span>
+                        </div>
+                        <div class="weui-loadmore weui-loadmore_line">
+                            <span class="weui-loadmore__tips">暂无数据</span>
+                        </div>
+                        <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+                            <span class="weui-loadmore__tips"></span>
+                        </div>
+                    </div>
                     <div class="weui-tab__content">上传页</div>
 
 
@@ -133,7 +149,7 @@
                     </span>
                     <p class="weui-tabbar__label">发现</p>
                 </a>
-                <a href="javascript:;" class="weui-tabbar__item">
+                <a href="/user.html" class="weui-tabbar__item">
                     <img src="Static/image/user.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">我</p>
                 </a>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>Quan UI 1.0 By Jie</title>
+	<!-- 引入 WeUI -->
+	<link rel="stylesheet" href="Static/Lib/weui/dist/style/weui.min.css" />
+	<script type="text/javascript" src="Static/Lib/weui/dist/weui.min.js"></script>
+	<style>
+	  .page, body {
+			 background-color: #f8f8f8; 
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="page__bd" style="height: 100%;">
+
+
+			<div class="weui-panel weui-panel_access">
+				<div class="weui-cell">
+					<div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+						<img src="Static/image/anchor.png" style="width: 50px;display: block" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>Quan UI</p>
+						<p style="font-size: 13px;color: #888888;">积分：1000</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="weui-panel weui-panel_access">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<span data-feather="shopping-cart" height="14"></span>
+					</div>
+					<div class="weui-cell__bd">
+						 积分充值
+					</div>
+				</div>
+			</div>
+			<div class="weui-panel weui-panel_access">
+				<div class="weui-cell weui-cell_access">
+					<div class="weui-cell__hd">
+						<span data-feather="dollar-sign" height="14"></span>
+					</div>
+					<div class="weui-cell__bd">
+						<span style="vertical-align: middle">积分记录</span>
+					</div>
+				</div>
+
+				<div class="weui-cell weui-cell_access">
+					<div class="weui-cell__hd">
+						<span data-feather="message-circle" height="14"></span>
+					</div>
+					<div class="weui-cell__bd">
+						<span style="vertical-align: middle">留言反馈</span>
+					</div>
+					<div class="weui-cell__ft"></div>
+				</div>
+			</div>
+
+
+
+			<div class="weui-tabbar" style="position:fixed;  bottom:0" ;>
+				<a href="/index.html" class="weui-tabbar__item ">
+					<span style="display: inline-block;position: relative;">
+						<img src="Static/image/quan.png" alt="" class="weui-tabbar__icon">
+						<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+					</span>
+					<p class="weui-tabbar__label">领券</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<img src="Static/image/da.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">大红包</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<span style="display: inline-block;position: relative;">
+						<img src="Static/image/faxian.png" alt="" class="weui-tabbar__icon">
+						<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+					</span>
+					<p class="weui-tabbar__label">发现</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+					<img src="Static/image/user.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">我</p>
+				</a>
+			</div>
+		</div>
+
+
+		<br><br><br>
+	</div>
+
+	<script>
+        weui.tab('#tab', {
+            defaultIndex: 0,
+            onChange: function (index) {
+                console.log(index);
+            }
+        });
+	</script>
+	<script src="Static/Lib/feather-icons/feather.min.js"></script>
+	<script>
+            feather.replace()
+	</script>
+
+</body>
+</html>
